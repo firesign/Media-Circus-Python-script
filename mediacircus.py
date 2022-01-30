@@ -63,14 +63,14 @@ def main():
 	#print dailytweetsconverted		
 
 #	save to file
-	f = open('/var/www/mediacircus/dailytweets.txt', "w")
+	f = open('/var/www/html/mediacircus/dailytweets.txt', "w")
 	f.write(str(dailytweets))
 	f.close()
 	
 #	this file currently contains unwanted characters
 	
 #	prepare text for clean up	
-	f = open('/var/www/mediacircus/dailytweets.txt')
+	f = open('/var/www/html/mediacircus/dailytweets.txt')
 	dailytweetsconverted = f.read()
 	f.close()
 	
@@ -101,7 +101,7 @@ def main():
 	
 
 #	save the cleaned up text to file	
-	f = open('/var/www/mediacircus/dailytweets.txt', "w")
+	f = open('/var/www/html/mediacircus/dailytweets.txt', "w")
 	f.write(str(dailytweetsconverted))
 	f.close()
 	
